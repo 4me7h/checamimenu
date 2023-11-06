@@ -1,0 +1,15 @@
+.hero {
+    background-color: red;
+
+    img {
+        width: 200px;
+        opacity: 0.4;
+        transition: width 3s linear, opacity 4s ease-out, transform 8s;
+        &:hover {
+            width: 400px;
+            
+            opacity: 1;
+            transform: rotate(145deg);
+        }
+    }
+}
