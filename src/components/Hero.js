@@ -1,32 +1,20 @@
-import React from 'react'
-
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import './Hero.scss';
+import imgBackground from '../images/hero.jpg';
 
 const Hero = () => {
+    const backgroundImage = `url(${imgBackground})`;
     return(
-        <section className='hero'>
+        <section className="hero hero--bgimg" style={{backgroundImage: `${backgroundImage}`}}>
+            <div className="hero__filter"></div>
             <Container>
                 <Row>
                     <Col>
                         <div className='hero__container'>
-                            <div className='hero__header'>
-                                <h1>¡Bienvenido a la Revolución del Menú Digital!</h1>
-                            </div>
                             <div className='hero__content'>
-                                <img src="https://tinyurl.com/checamimenu" alt="imgHero"/>
-                                <p>
-                                    ¿Estás buscando la forma más moderna y conveniente de presentar tus deliciosos platillos a tus clientes?
-                                </p>
-                                <p>
-                                    ¡No busques más!
-                                </p>
-                                <p>
-                                    Nuestro Menú Digital para Restaurantes es la solución perfecta para llevar la experiencia culinaria de tu restaurante al siguiente nivel.
-                                </p>
+                                <h1 class="text--title">¡Bienvenido a la Revolución del Menú Digital!</h1>
                             </div>
                         </div>
                     </Col>

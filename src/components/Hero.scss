@@ -1,15 +1,20 @@
 .hero {
-    background-color: red;
+    &--bgimg {
+        @include bgimg;
+    }
+    //filter
+    &__filter {
+        background-color: rgba(black, 0.40);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
 
-    img {
-        width: 200px;
-        opacity: 0.4;
-        transition: width 3s linear, opacity 4s ease-out, transform 8s;
-        &:hover {
-            width: 400px;
-            
-            opacity: 1;
-            transform: rotate(145deg);
-        }
+    //hero contenidos
+    &__container {
+        position: relative;
+    }
+    &__content {
+        padding: 8rem 0;
     }
 }
